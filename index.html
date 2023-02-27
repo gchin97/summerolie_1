@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Vanilla Challenge</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css"/>
   </head>
+  <h1>Random Number Game</h1>
+  <div id="generation">
+    <h2>
+      Generate a number between 0 and</h2>
+      <form>
+        <input id="generation-input" type="number" min="0" value="1" />
+      </form>
+  </div>
+  <div id="guessnumber">
+  <p>
+    Guess the number:
+      <form id="guessnumberform">
+          <input id="numbervalue" type="text" min="0"/>
+          <input id="playbutton" type="button" value="Play!"/>
+        </form>
+    </div>
+        <div class="theresult">
+        <span id="description"></span></div>
+        <div class="thefinalresult">
+        <span id="result"></span>
+        </div>
+  </p>
+
   <body>
-    <h1 id="click">click me!</h1>
+    <script src="app.js"></script>
   </body>
-  <script src="app.js"></script>
 </html>
